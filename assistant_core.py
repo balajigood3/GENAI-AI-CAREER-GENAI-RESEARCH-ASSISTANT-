@@ -28,7 +28,7 @@ PROMPTS = {
 
 class CareerResearchAssistant:
     def __init__(self):
-        api_key = config("OPENAI_API_KEY")
+        api_key = config("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")
         if not api_key:
             raise RuntimeError("OPENAI_API_KEY is missing. Add it in Streamlit Cloud: Manage app > Settings > Secrets, or in a local .env file.")
         self.client = OpenAI(api_key=api_key)
